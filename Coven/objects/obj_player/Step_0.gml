@@ -76,7 +76,9 @@ if(place_meeting(x,y+vspd,obj_block)){
 	vspd = 0
 }
 x+=hspd
-y+=vspd
+y+=vspd 
+
+
 #endregion
 #region debug
 if(keyboard_check_pressed(vk_space)){
