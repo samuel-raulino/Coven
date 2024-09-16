@@ -58,10 +58,10 @@ if vspd>0{
 }
 }
 #endregion
-
+#region move
 movex = +keyboard_check(vk_right)-keyboard_check(vk_left)
 movey = +keyboard_check(vk_down)-keyboard_check(vk_up)
-hspd = movex*spd 
+hspd = movex*spd
 vspd = movey*spd
 if(place_meeting(x+hspd,y,obj_block)){
 	while(!place_meeting(x+sign(hspd),y,obj_block)){
@@ -77,3 +77,9 @@ if(place_meeting(x,y+vspd,obj_block)){
 }
 x+=hspd
 y+=vspd
+#endregion
+#region debug
+if(keyboard_check_pressed(vk_space)){
+	scr_add_item(spr_gun,true,"gun")
+}
+#endregion
