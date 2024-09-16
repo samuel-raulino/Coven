@@ -1,7 +1,7 @@
 {
   "$GMSprite":"",
   "%Name":"spr_player_walk_up",
-  "bboxMode":0,
+  "bboxMode":2,
   "bbox_bottom":59,
   "bbox_left":0,
   "bbox_right":16,
@@ -96,7 +96,7 @@
     "visibleRange":null,
     "volume":1.0,
     "xorigin":8,
-    "yorigin":25,
+    "yorigin":27,
   },
   "swatchColours":null,
   "swfPrecision":0.5,
