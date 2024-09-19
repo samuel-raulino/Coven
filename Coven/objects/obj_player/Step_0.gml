@@ -81,7 +81,9 @@ y+=vspd
 
 #endregion
 #region debug
-if(keyboard_check_pressed(vk_space)){
-	scr_add_item(spr_gun,true,"gun")
+if(place_meeting(x,y,obj_item_father)){
+	_item = instance_nearest(x,y,obj_item_father)
+	scr_add_item(_item.item,_item.contable,_item._type,_item.qtd)
+	instance_destroy(_item)
 }
 #endregion
