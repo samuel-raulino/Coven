@@ -23,8 +23,14 @@ if(inv == true){
 			var slot = ds_grid_get(global.inventario,xx,yy)
 			var _pix = (640+120+30+2)
 			var _piy = (34+105)
-			draw_sprite_ext(slot[0],0,_pix+ (xx*(42*xscale)),_piy + (yy*(32*yscale)),xscale,yscale,0,c_white,1)
-			draw_text(_pix + (xx*42),_piy+(yy*32),slot[1])
+			distx = (xx*(42*xscale))
+			disty = (yy*(32*yscale))
+			
+			draw_sprite_ext(slot[0],0,_pix+ distx,_piy + disty,xscale,yscale,0,c_white,1)
+			draw_set_color(c_white)
+			draw_self()
+			draw_set_font(fnt_pixel)
+			draw_text(_pix + distx+72,_piy+disty+72,slot[1])
 		}
 	}
 }

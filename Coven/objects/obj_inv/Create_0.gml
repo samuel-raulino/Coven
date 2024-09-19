@@ -10,4 +10,4 @@ for (var xx = 0; xx < ds_grid_width(global.inventario); xx++) {
 		 ds_grid_set(global.inventario, xx, yy, [spr_slot,0,"slot"]);
     }
 }
-inv = true
+inv = false
