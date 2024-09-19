@@ -56,6 +56,7 @@
     {"id":{"name":"spr_player_walk_up","path":"sprites/spr_player_walk_up/spr_player_walk_up.yy",},},
     {"id":{"name":"spr_player_walk","path":"sprites/spr_player_walk/spr_player_walk.yy",},},
     {"id":{"name":"spr_player","path":"sprites/spr_player/spr_player.yy",},},
+    {"id":{"name":"spr_slot_selector","path":"sprites/spr_slot_selector/spr_slot_selector.yy",},},
     {"id":{"name":"spr_slot","path":"sprites/spr_slot/spr_slot.yy",},},
   ],
   "resourceType":"GMProject",

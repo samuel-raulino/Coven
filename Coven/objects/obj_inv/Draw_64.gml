@@ -25,8 +25,9 @@ if(inv == true){
 			var _piy = (34+105)
 			distx = (xx*(42*xscale))
 			disty = (yy*(32*yscale))
-			
-			draw_sprite_ext(slot[0],0,_pix+ distx,_piy + disty,xscale,yscale,0,c_white,1)
+			subimg = 0
+			draw_sprite_ext(spr_slot_selector,0,_pix,_piy,xscale,yscale,0,c_white,1)
+			draw_sprite_ext(slot[0],subimg,_pix+ distx,_piy + disty,xscale,yscale,0,c_white,1)
 			draw_set_color(c_white)
 			draw_self()
 			draw_set_font(fnt_pixel)
